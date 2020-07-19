@@ -16,8 +16,6 @@ def canUnlockAll(boxes):
             key_list.append(boxes[0])
         for i in key_list:
             for j in i:
-                if j is not int:
-                    return (False)
                 myDict[j] = True
                 i.remove(j)
                 if j < len(boxes):
