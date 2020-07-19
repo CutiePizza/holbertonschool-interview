@@ -6,7 +6,9 @@ lockboxes problem
 
 def canUnlockAll(boxes):
     """lockboxes"""
-    if (boxes is not None and type(boxes) is list):
+    if (boxes is None):
+        return (True)
+    if (type(boxes) is list):
         myDict = {}
         key_list = []
         myDict[0] = True
