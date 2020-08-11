@@ -5,18 +5,13 @@ Interview task
 
 
 def minOperations(n):
-    copyAll = 1
-    past = 0
-    i = 0
-    for j in range(1, n//2):
-        if n % j == 0:
-            i = j
-    past = i
-    if (past == n):
-        print("haha")
-        return (past + copyAll)
+    if n == 1:
+        return 0 
+    elif n == 2:
+        return 2
     else:
-        copyAll += 1
-        while (past != i):
-            past += 1
-        return (past + copyAll + 1)
+        for i in range(n - 1, 0, -1):
+            if n % i == 0:
+                op = n // i
+                return op + minOperations(i)
+
