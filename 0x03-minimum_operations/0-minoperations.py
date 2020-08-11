@@ -2,6 +2,8 @@
 """
 Interview task
 """
+
+
 def minOperations(n):
     copyAll = 1
     past = 0
