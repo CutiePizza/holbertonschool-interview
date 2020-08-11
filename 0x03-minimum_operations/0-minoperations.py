@@ -17,15 +17,3 @@ def minOperations(n):
         while (past != i):
             past += 1
         return (past + copyAll + 1)
-            
-
-
-
-if __name__ == "__main__":
-    n = 4
-    print("Min number of operations to reach {} characters: {}".format(n, minOperations(n)))
-
-    n = 5
-    print("Min number of operations to reach {} characters: {}".format(n, minOperations(n)))
-
-
