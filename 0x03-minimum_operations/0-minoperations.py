@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Interview task
 """
@@ -13,11 +14,3 @@ def minOperations(n):
             if n % i == 0:
                 op = n // i
                 return op + minOperations(i)
-
-if __name__ == "__main__":
-    n = 4
-    print("Min number of operations to reach {} characters: {}".format(n, minOperations(n)))
-
-    n = 0
-    print("Min number of operations to reach {} characters: {}".format(n, minOperations(n)))
-    
