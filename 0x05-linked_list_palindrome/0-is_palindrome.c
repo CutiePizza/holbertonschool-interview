@@ -51,7 +51,7 @@ int *convert_array(listint_t *head)
 int is_palindrome(listint_t **head)
 {
 	int *p;
-	int l, j, flag;
+	int l, flag;
 
 	if (*head == NULL)
 		return (1);
