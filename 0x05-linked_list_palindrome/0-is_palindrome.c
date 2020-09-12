@@ -52,13 +52,13 @@ int *convert_array(listint_t *head)
 int is_palindrome(listint_t **head)
 {
 	int *p;
-	int l, flag;
+	int i, l, flag;
 
 	if (*head == NULL)
 		return (1);
 	p = convert_array(*head);
 	l = len(*head);
-	for (int i = 0; i < l / 2; i++)
+	for (i = 0; i < l / 2; i++)
 	{
 		if (p[i] != p[l - i - 1])
 		{
