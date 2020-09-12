@@ -12,6 +12,7 @@ int len(listint_t *head)
 {
 	listint_t *p = head;
 	int i = 0;
+
 	while (p != NULL)
 	{
 		i++;
@@ -67,6 +68,5 @@ int is_palindrome(listint_t **head)
 	}
 	if (flag == 1)
 		return (0);
-	else
-		return (1);
+	return (1);
 }
