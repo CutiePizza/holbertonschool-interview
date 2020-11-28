@@ -18,11 +18,9 @@ request(url, { json: true }, (err, res, body) => {
 });
 
 setTimeout(function() {
-  let j;
-  for (i = 0; i < ids.length; i++)
-  {
-    j = ids[i];
-    console.log(names[j]);
-  }
-}, 1000)
+  body.characters.forEach(element => {
+    let id = element.split('/')[5];
+    console.log(names[id]);
+  });
+}, 1000);
 });
