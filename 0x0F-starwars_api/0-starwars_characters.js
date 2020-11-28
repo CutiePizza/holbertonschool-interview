@@ -22,5 +22,5 @@ setTimeout(function() {
     let id = element.split('/')[5];
     console.log(names[id]);
   });
-}, 1000);
+}, 2000);
 });
