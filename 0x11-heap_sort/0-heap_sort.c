@@ -6,6 +6,8 @@
  * swap - swap two cases
  * @a: integer
  * @b: integer
+ * @array: array of int
+ * @size: size of array
  */
 
 void swap(int *a, int *b, int *array, size_t size)
