@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
   int *result;
   int c = 0;
   int nonzero = 0;
-  int shift = 0, carry;
+  int carry;
   static char str[512];
 
   if (argc - 1 != 2)
