@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "holberton.h"
-#define MAX(a, b) (a)>(b)?(a):(b)
+#define MAX(a, b) (a) > (b) ? (a) : (b)
 
 /**
  * len - return length of string
@@ -12,9 +12,7 @@ int len(char *ch)
 {
   int i = 0;
   while (ch[i] != '\0')
-  {
     i++;
-  }
   return (i);
 }
 /**
@@ -49,7 +47,7 @@ int main(int argc, char *argv[])
   int c = 0;
   int nonzero = 0;
   int carry;
-  static char str[512];
+  static char *str;
 
   if (argc - 1 != 2)
   {
@@ -75,10 +73,11 @@ int main(int argc, char *argv[])
         {
             result[c++] = carry;
         }
-        if(result[c - 1])
+        if (result[c - 1])
             nonzero = MAX(nonzero, c - 1);   
     }
-    for(i = nonzero; i >= 0; i--)
+    str = malloc(sizeof(char) * 10000);
+    for (i = nonzero; i >= 0; i--)
     {
         str[nonzero - i] = result[i] + '0';
     }
