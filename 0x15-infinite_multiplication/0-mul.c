@@ -36,7 +36,7 @@ void verify_num(char *ch)
 }
 /**
  * main - main function
- * @argc - number of arguments
+ * @argc: number of arguments
  * @argv: arguments
  * Return: 0
  */
