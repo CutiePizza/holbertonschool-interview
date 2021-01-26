@@ -6,17 +6,14 @@
  * swap - swap two cases
  * @a: integer
  * @b: integer
- * @array: array of int
- * @size: size of array
  */
 
-void swap(int *a, int *b, int *array, size_t size)
+void swap(int *a, int *b)
 {
 	int tmp = *a;
 
 	*a = *b;
-	*b = tmp;
-	
+	*b = tmp;	
 }
 
 /**
@@ -39,7 +36,7 @@ void heapify(int *array, size_t n, size_t i, size_t size)
 		largest = right;
 	if (largest != i)
 	{
-		swap(&array[i], &array[largest], array, size);
+		swap(&array[i], &array[largest]);
 		print_array(array, size);
 		heapify(array, n, largest, size);
 	}
@@ -62,7 +59,7 @@ void heap_sort(int *array, size_t size)
 	for (i = size - 1; (int)i >= 0; i--)
 	{
 		print_array(array, size);
-		swap(&array[0], &array[i], array, size);
+		swap(&array[0], &array[i]);
 		heapify(array, i, 0, size);
 	}
 }
