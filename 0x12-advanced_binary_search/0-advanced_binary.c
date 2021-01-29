@@ -1,10 +1,10 @@
 #include "search_algos.h"
 
 /**
- * print_array - print array
- * @start: Where to start to print
- * @end: end of printing
- */
+* print_array - print array
+* @start: Where to start to print
+* @end: end of printing
+*/
 void print_array(int *array, int start, int end)
 {
 	int i;
@@ -19,13 +19,13 @@ void print_array(int *array, int start, int end)
 }
 
 /**
- * binary - Recursive algorithm for binary search
- * @array: array
- * @l: left of array
- * @r: right of array
- * @value: value to look for
- * Return: Index of located value or -1 if not found
- */
+* binary - Recursive algorithm for binary search
+* @array: array
+* @l: left of array
+* @r: right of array
+* @value: value to look for
+* Return: Index of located value or -1 if not found
+*/
 
 int binary(int *array, int l, int r, int value)
 {
@@ -44,15 +44,13 @@ int binary(int *array, int l, int r, int value)
 	}
 	return (-1);
 }
-
 /**
- * advanced_binary - Search for a given integer
- * @array: array of integer
- * @size: size or array
- * @value: value to look for
- * Return: Index of value
- */
-
+* advanced_binary - Search for a given integer
+* @array: array of integer
+* @size: size or array
+* @value: value to look for
+* Return: Index of value
+*/
 int advanced_binary(int *array, size_t size, int value)
 {
     if (!array || size < 1)
