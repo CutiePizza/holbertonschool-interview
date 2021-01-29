@@ -31,10 +31,10 @@ void print_array(int *array, int start, int end)
 int binary(int *array, int l, int r, int value)
 {
 	int m;
-
-    m = (r + l) / 2;
+    
 	if (l <= r)
 	{
+        m = (r + l) / 2;
         if (array[m] == value && l == r)
             return (m);
         print_array(array, l, r);
