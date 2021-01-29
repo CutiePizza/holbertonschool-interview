@@ -33,11 +33,11 @@ int binary(int *array, int l, int r, int value)
 
 	if (l <= r)
 	{
-		print_array(array, l, r);
 		m = (r + l) / 2;
 
 		if (array[m] ==  value && l == r)
 			return (m);
+        print_array(array, l, r);
 		if (array[m] >= value)
 			return binary(array, l, m, value);
 		return binary(array, m + 1, r, value);
