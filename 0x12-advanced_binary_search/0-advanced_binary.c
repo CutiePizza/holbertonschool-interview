@@ -35,7 +35,7 @@ int binary(int *array, int l, int r, int value)
     m = (r + l) / 2;
     if (array[m] == value && l == r)
         return (m);
-	if (l < r)
+	if (l <= r)
 	{
         print_array(array, l, r);
 		if (array[m] >= value)
