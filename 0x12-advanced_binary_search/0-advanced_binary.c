@@ -10,7 +10,7 @@ void print_array(int *array, int start, int end)
 {
 	int i;
 
-    printf("Searching in array: ");
+	printf("Searching in array: ");
 	for (i = start; i <= end; i++)
 	{
 		if (i == end)
@@ -32,13 +32,13 @@ void print_array(int *array, int start, int end)
 int binary(int *array, int l, int r, int value)
 {
 	int m;
-    
-    m = (r + l) / 2;
-    if (array[m] == value && l == r)
-        return (m);
+
+	m = (r + l) / 2;
+	if (array[m] == value && l == r)
+		return (m);
 	if (l <= r)
 	{
-        print_array(array, l, r);
+		print_array(array, l, r);
 		if (array[m] >= value)
 			return (binary(array, l, m, value));
 		return (binary(array, m + 1, r, value));
