@@ -55,7 +55,7 @@ int binary(int *array, int l, int r, int value)
 
 int advanced_binary(int *array, size_t size, int value)
 {
-    if (!array)
+    if (!array || size < 1)
         return (-1);
     return (binary(array, 0, (int)size - 1, value));
 }
