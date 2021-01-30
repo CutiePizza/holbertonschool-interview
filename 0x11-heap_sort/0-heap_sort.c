@@ -17,6 +17,7 @@ void swap(int *a, int *b)
 }
 /**
  * heapify - heapify array
+ * @array: array
  * @n: integer
  * @i: integer
  * @size: size of array
