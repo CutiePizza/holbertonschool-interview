@@ -16,7 +16,6 @@ void swap(int *a, int *b)
 
 	*a = *b;
 	*b = tmp;
-
 }
 /**
  * heapify - heapify array
@@ -50,9 +49,11 @@ void heapify(int *array, int n, int i, size_t size)
 
 void heap_sort(int *array, size_t size)
 {
-	for (int i = (int)size / 2 - 1; i >= 0; i--)
+	int i;
+
+	for (i = (int)size / 2 - 1; i >= 0; i--)
 		heapify(array, (int)size, i, size);
-	for (int i = (int)size - 1; i > 0; i--)
+	for (i = (int)size - 1; i > 0; i--)
 	{
 		swap(&array[0], &array[i]);
 		heapify(array, i, 0, size);
