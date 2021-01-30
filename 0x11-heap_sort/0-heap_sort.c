@@ -6,8 +6,6 @@
  * swap - swap two cases
  * @a: integer
  * @b: integer
- * @array: array of int
- * @size: size of array
  */
 
 void swap(int *a, int *b)
@@ -50,6 +48,7 @@ void heapify(int *array, int n, int i, size_t size)
 void heap_sort(int *array, size_t size)
 {
 	int i;
+
 	if (!array || size < 1)
 		return;
 
