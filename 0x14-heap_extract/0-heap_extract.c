@@ -10,10 +10,10 @@
 
 int tree_size(heap_t *root)
 {
-	if (root == NULL)  
-		return 0; 
-	else     
-		return(tree_size(root->left) + 1 + tree_size(root->right)); 
+	if (root == NULL)
+		return (0);
+	else
+		return (tree_size(root->left) + 1 + tree_size(root->right));
 }
 /**
  * heap_to_array - creates an array from heap
@@ -75,7 +75,7 @@ int heap_extract(heap_t **root)
 	heap_t **array;
 
 	if (!root || !*root)
-		return(0);
+		return (0);
 	n = (*root)->n;
 	size = tree_size(*root);
 	array = calloc(1024, sizeof(heap_t *));
