@@ -13,7 +13,7 @@ skiplist_t *search(skiplist_t *list, int value)
 
 	for (s = list; s; s = s->next)
 	{
-		printf("Value checked at index [%lu] = [%lu]\n", s->index, s->n);
+		printf("Value checked at index [%lu] = [%u]\n", s->index, s->n);
 		if (s->n == value)
 			return (s);   
 	}
@@ -51,7 +51,7 @@ skiplist_t *linear_skip(skiplist_t *list, int value)
 		}
 		idx = express->index;
 		n = express->n;
-		printf("Value checked at index [%lu] = [%lu]\n", idx, n);
+		printf("Value checked at index [%lu] = [%u]\n", idx, n);
 		if (express->n >= value)
 		{
 			i = current->index;
