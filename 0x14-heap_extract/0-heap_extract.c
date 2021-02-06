@@ -78,14 +78,14 @@ int heap_extract(heap_t **root)
 		return(0);
 	n = (*root)->n;
 	size = tree_size(*root);
-	array = calloc(2000, sizeof(heap_t *));
+	array = calloc(1024, sizeof(heap_t *));
 	if (array == NULL)
 		return (0);
 	heap_to_array(array, *root, 0);
 	if (array[size - 1] == *root)
 	{
 		free(array);
-		free(root);
+		free(*root);
 		*root = NULL;
 		return (n);
 	}
