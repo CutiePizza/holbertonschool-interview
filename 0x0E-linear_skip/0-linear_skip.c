@@ -15,14 +15,15 @@ skiplist_t *search(skiplist_t *list, int value)
 	{
 		printf("Value checked at index [%lu] = [%u]\n", s->index, s->n);
 		if (s->n == value)
-			return (s);   
+			return (s);
 	}
 	return (NULL);
 }
 /**
  * linear_skip - look for a value
- * 
- * 
+ * @list: list
+ * @value: value to look for
+ * Return: value if found
  */
 
 skiplist_t *linear_skip(skiplist_t *list, int value)
