@@ -2,6 +2,12 @@
 #include <stdio.h>
 #include "sort.h"
 
+/**
+ * merge - merge two subarrays
+ * @begin: left array
+ * @mid: mid array
+ * @end: right array
+ */
 void merge(int *arr, int begin, int mid, int end)
 {
 	int i, j, k;
@@ -9,7 +15,7 @@ void merge(int *arr, int begin, int mid, int end)
 	int n2 = end - mid + 1;
 	int L[1024], R[1024];
 
-    
+
 	printf("Merging...\n");
 	for (i = 0; i < n1; i++)
 		L[i] = arr[begin + i];
@@ -53,7 +59,12 @@ void merge(int *arr, int begin, int mid, int end)
 	printf("[Done]: ");
 	print_array(&arr[begin], end - begin + 1);
 }
-
+/**
+ * m_sort - sort array
+ * @array: array
+ * @begin: left array
+ * @end: right array
+ */ 
 void m_sort(int *array, int begin, int end)
 {
 	int mid;
@@ -68,6 +79,11 @@ void m_sort(int *array, int begin, int end)
 	}
 }
 
+/**
+ * merge_sort - merge sort
+ * @array: array to sort
+ * @size: array's size
+ */
 void merge_sort(int *array, size_t size)
 {
 	if (!array || size < 2)
