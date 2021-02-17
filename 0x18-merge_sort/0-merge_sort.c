@@ -11,7 +11,7 @@
  */
 void merge(int *arr, int begin, int mid, int end)
 {
-	int i, j, k, n1 = mid - begin, n2 = end - mid + 1;
+	int i = 0, j = 0, k, n1 = mid - begin, n2 = end - mid + 1;
 	int L[1024], R[1024];
 
 	printf("Merging...\n");
@@ -23,8 +23,6 @@ void merge(int *arr, int begin, int mid, int end)
 	print_array(L, n1);
 	printf("[right]: ");
 	print_array(R, n2);
-	i = 0;
-	j = 0;
 	k = begin;
 	while (i < n1 && j < n2)
 	{
