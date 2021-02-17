@@ -11,7 +11,7 @@
  */
 void printing(int L[], int R[], int n1, int n2)
 {
-    printf("[left]: ");
+	printf("[left]: ");
 	print_array(L, n1);
 	printf("[right]: ");
 	print_array(R, n2);
@@ -26,7 +26,7 @@ void printing(int L[], int R[], int n1, int n2)
 void merge(int *arr, int begin, int mid, int end)
 {
 	int i, j, k = begin, n1 = mid - begin, n2 = end - mid + 1;
-    int R[1024], L[1024];
+	int R[1024], L[1024];
 
 	printf("Merging...\n");
 	for (i = 0; i < n1; i++)
@@ -34,8 +34,8 @@ void merge(int *arr, int begin, int mid, int end)
 	for (j = 0; j < n2; j++)
 		R[j] = arr[mid + j];
 	printing(L, R, n1, n2);
-    i = 0;
-    j = 0;
+	i = 0;
+	j = 0;
 	while (i < n1 && j < n2)
 	{
 		if (L[i] <= R[j])
@@ -70,7 +70,7 @@ void merge(int *arr, int begin, int mid, int end)
  * @array: array
  * @begin: left array
  * @end: right array
- */ 
+ */
 void m_sort(int *array, int begin, int end)
 {
 	int mid;
