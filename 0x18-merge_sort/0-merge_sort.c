@@ -4,17 +4,15 @@
 
 /**
  * merge - merge two subarrays
+ * @arr: array
  * @begin: left array
  * @mid: mid array
  * @end: right array
  */
 void merge(int *arr, int begin, int mid, int end)
 {
-	int i, j, k;
-	int n1 = mid - begin;
-	int n2 = end - mid + 1;
+	int i, j, k, n1 = mid - begin, n2 = end - mid + 1;
 	int L[1024], R[1024];
-
 
 	printf("Merging...\n");
 	for (i = 0; i < n1; i++)
@@ -42,14 +40,12 @@ void merge(int *arr, int begin, int mid, int end)
 		}
 		k++;
 	}
-
 	while (i < n1)
 	{
 		arr[k] = L[i];
 		i++;
 		k++;
 	}
-
 	while (j < n2)
 	{
 		arr[k] = R[j];
