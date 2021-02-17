@@ -84,7 +84,6 @@ void m_sort(int *array, int begin, int end)
 		merge(array, begin, mid, end);
 	}
 }
-
 /**
  * merge_sort - merge sort
  * @array: array to sort
