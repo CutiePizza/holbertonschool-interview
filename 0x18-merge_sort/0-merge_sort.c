@@ -55,7 +55,7 @@ void merge(int *arr, int begin, int mid, int end)
 
 void m_sort(int *array, int begin, int end)
 {
-	int mid, i;
+	int mid;
 
 	if (begin < end)
 	{
