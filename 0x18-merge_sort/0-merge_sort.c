@@ -7,8 +7,10 @@ void merge(int *arr, int begin, int mid, int end)
 	int i, j, k;
 	int n1 = mid - begin;
 	int n2 = end - mid + 1;
-	int L[n1], R[n2];
+	int *L, *R;
 
+    L = calloc(sizeof(int), n1));
+    R = calloc(sizeof(int), n2));
 	printf("Merging...\n");
 	for (i = 0; i < n1; i++)
 		L[i] = arr[begin + i];
