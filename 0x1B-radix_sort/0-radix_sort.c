@@ -55,10 +55,11 @@ void countSort(int arr[], size_t n, int exp)
 void radix_sort(int *array, size_t size)
 {
 	int exp;
-	int m = getMax(array, size);
+	int m;
 
     if (!array || size < 2)
         return;
+    m = getMax(array, size)
 	for (exp = 1; m / exp > 0; exp *= 10)
 		countSort(array, size, exp);
 }
