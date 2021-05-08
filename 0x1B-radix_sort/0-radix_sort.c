@@ -59,7 +59,7 @@ void radix_sort(int *array, size_t size)
 
     if (!array || size < 2)
         return;
-    m = getMax(array, size)
+    m = getMax(array, size);
 	for (exp = 1; m / exp > 0; exp *= 10)
 		countSort(array, size, exp);
 }
