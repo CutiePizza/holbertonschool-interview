@@ -26,6 +26,6 @@ int regex_match(char const *str, char const *pattern)
 		if (!(*(pattern + 2)))
 			return (1);
 		return (regex_match(str, pattern + 2) || regex_match(str + 1, pattern));
-	}	
+	}
 	return (0);
 }
